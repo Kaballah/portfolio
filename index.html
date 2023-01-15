@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="./css/styles.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+    <title>Portfolio - Kaballah Ronnie</title>
+</head>
+<body>
+    <div class="load">
+        <div class="loader">
+            <div class="face"  id="load">
+                <div class="circle"></div>
+            </div>
+            <div class="face">
+                <div class="circle"></div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="main">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">PORTFOLIO</a>
+                
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">HOME</a>
+                        </li>
+                        
+                        <li class="nav-item">
+                            <a class="nav-link" href="#Section2">ABOUT</a>
+                        </li>
+                        
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            SERVICES
+                            </a>
+                            
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li>
+                                    <a class="dropdown-item" href="#Section3">Web Development</a>
+                                </li>
+                                
+                                <li>
+                                    <a class="dropdown-item" href="#">Mobile Programming</a>
+                                </li>
+                                
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                
+                                <li>
+                                    <a class="dropdown-item" href="#">Other Specialties</a>
+                                </li>
+                            </ul>
+                        </li>
+                        
+                        <li class="nav-item">
+                            <a class="nav-link " href="#Section4" tabindex="-1" aria-disabled="true">CONTACTS</a>
+                        </li>
+                    </ul>
+                    
+                    <form class="d-flex">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit" style="color: #ffffff;">Search</button>
+                    </form>
+                </div>
+            </div>
+        </nav>
+
+        <div class="body">
+            <section class="Section1">
+                <iframe src='https://my.spline.design/3dtextbluecopy-5fcfe538de0b728aaf1d5fa764f676a9/' frameborder='0' width='100%' height='100%'>
+                    <!-- <h1>
+                        Home
+                    </h1>
+                    <h1>
+                        Home
+                    </h1>
+                    <h1>
+                        Home
+                    </h1> -->
+                </iframe>
+            </section>
+            <!-- <div class="Section2">
+                <iframe src='https://my.spline.design/interactivespherescopy-578859d36cc5931702b592531aca26c4/' frameborder='0' width='100%' height='100%'></iframe>
+            </div>
+            <div class="Section4">
+                <iframe src='https://my.spline.design/hands3duicopy-0abb9a83c1881b613da6cc4da61789f0/' frameborder='0' width='100%' height='100%'></iframe>
+            </div> -->
+            <section class="Section" id="Section2">
+                <h1>
+                    About Me
+                </h1>
+            </section>
+            <section class="Section" id="Section3">
+                <iframe src='https://my.spline.design/devicecloudcopy-95f3e1a01c1c0d08265308e0d68a334d/' frameborder='0' width='100%' height='100%'>
+                    <div class="service" style="z-index: 1001;">
+                        <h1>
+                            Services
+                        </h1>
+                    </div>
+                </iframe>
+                
+            </section>
+            <section class="Section" id="Section4">
+                <h1>
+                    Contact Me
+                </h1>
+            </section>
+        </div>
+    </div>
+
+    <script>
+        document.onreadystatechange = function() {
+            if (document.readyState !== "complete") {
+                document.querySelector("body").style.visibility = "hidden";
+                document.querySelector(".loader").style.visibility = "visible";
+            } else {
+                document.querySelector(".loader").style.display = "none";
+                document.querySelector("body").style.visibility = "visible";
+            }
+        };
+    </script>
+</body>
+</html>
