@@ -1,3 +1,8 @@
+html {
+  scroll-behavior: smooth;
+}
+
+
 body {
     background-color: gray !important;
 }
@@ -107,6 +112,7 @@ body {
     position:-webkit-sticky !important;
     position:sticky !important;
     top:0px !important;
+    z-index: 1;
 }
 
 iframe {
@@ -348,6 +354,10 @@ p {
     #intro {
         padding: 0 10px;
     }
+
+    .loader {
+      left: 30;
+    }
   
     h1 {
         font-size: 30px;
@@ -363,6 +373,9 @@ p {
 }
 
 @media only screen and (max-width: 320px) {
+  .loader {
+    left: 30;
+  }
     h1 {
         font-size: 28px;
     }
@@ -370,4 +383,21 @@ p {
     h1::after {
         height: 4px;
     }
+}
+
+div .card {
+  backdrop-filter: blur(15px);
+  background-color: rgba(255, 255, 255, .2);
+  border-radius: 3em;
+  border: 2px solid rgba(255, 255, 255, .1);
+  background-clip: padding-box;
+  box-shadow: 10px 10px 10px rgba(46, 54, 68, 0.03);
+  margin-bottom: 20px !important;
+  z-index: 0 !important;
+}
+
+@media (max-width: 767px) {
+  .bg-image {
+    height: 1400px !important;
+  }
 }
